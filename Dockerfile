@@ -16,8 +16,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files (except those in .dockerignore)
 COPY . .
 
-# Expose Jupyter
-EXPOSE 8888
-
-# Run JupyterLab by default
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
+# Run Python app by default
+CMD ["python", "main.py"]

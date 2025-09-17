@@ -1,13 +1,11 @@
 version: "3.8"
 
 services:
-  notebook:
+  chatbot:
     build: .
     container_name: langgraph_chatbot
-    ports:
-      - "8888:8888"
     volumes:
       - .:/app
     env_file:
       - .env
-    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+    command: python chatbot.py
