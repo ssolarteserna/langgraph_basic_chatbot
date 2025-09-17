@@ -17,4 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run Python app by default
-CMD ["python", "main.py"]
+CMD ["python", "chatbot.py"]

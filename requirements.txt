@@ -2,4 +2,5 @@ langgraph
 langsmith
 langchain[google-genai]
 python-dotenv
+ipython
 
